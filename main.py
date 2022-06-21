@@ -32,6 +32,7 @@ def draw(win, paddles):
 
 class Paddle():
   COLOR = AAA
+  VEL = 4
   def __init__(self, x, y ,width, height):
     self.x = x
     self.y = y
@@ -40,6 +41,8 @@ class Paddle():
 
   def draw(self,win):
     pygame.draw.rect(win, self.COLOR, (self.x, self.y, self.width, self.height))
+
+  def move(self):
 
 
 
